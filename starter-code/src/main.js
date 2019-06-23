@@ -57,6 +57,7 @@ $(document).ready(function () {
   let cardLog = [];
 
   $('.card').on("click", function () {
+    console.log($(this));
     if ($(this).find('.back').is(':visible') && cardLog.length < 2) {
       $(this).find('.back').toggle();
       $(this).find('.front').toggle();
